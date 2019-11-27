@@ -1,2 +1,5 @@
-## [1.0.0]
+## 1.0.0
 - Add migration library code
+
+## 1.1.0
+- Fix bug that sets user version incorrectly

@@ -52,7 +52,9 @@ class Migrator {
 
       await database.transaction((tx) async {
         await m.migrationFn(tx);
-        await database.setVersion(m.version);
+
+        // DatabaseExecutor has no setVersion so we manually set the pragma
+        await tx.execute("PRAGMA `user_version` = ${m.version}");
       }, exclusive: true);
 
       ++appliedMigrations;
