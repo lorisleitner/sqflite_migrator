@@ -1,6 +1,6 @@
 name: sqflite_migrator
 description: Simple sqflite migration library
-version: 1.1.0
+version: 1.1.1
 author: Loris Leitner <lorisleitner@live.com>
 homepage: https://github.com/Loris156/sqflite_migrator
 
